@@ -173,7 +173,7 @@ source $BIN_DIR/steps/numpy-scipy
 source $BIN_DIR/steps/pip-install
 
 # Install Xgboost
-# source $BIN_DIR/steps/xgboost
+source $BIN_DIR/steps/xgboost
 
 # Django collectstatic support.
 sub-env $BIN_DIR/steps/collectstatic
