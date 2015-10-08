@@ -172,8 +172,8 @@ source $BIN_DIR/steps/numpy-scipy
 # Install dependencies with Pip.
 source $BIN_DIR/steps/pip-install
 
-# Install dependencies with Pip.
-source $BIN_DIR/steps/xgboost
+# Install Xgboost
+# source $BIN_DIR/steps/xgboost
 
 # Django collectstatic support.
 sub-env $BIN_DIR/steps/collectstatic
