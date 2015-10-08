@@ -3,12 +3,12 @@
 
 OUT_PREFIX=$1
 
-echo "Building SQLite..."
+echo "Building XGBoost..."
 
 
 SOURCE_TARBALL='https://github.com/dmlc/xgboost/archive/master.zip'
 
-curl $SOURCE_TARBALL -o xgboost.zip
+curl -L $SOURCE_TARBALL -o xgboost.zip
 
 unzip xgboost.zip
 
