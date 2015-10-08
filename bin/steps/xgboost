@@ -21,6 +21,10 @@ make
 
 mkdir -p .heroku/
 
+cd python-package
+
+python setup.py install
+
 # Cleanup
-#cd ..
-# rm -fr sqlite
+cd ../..
+rm -fr xgboost.zip
