@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Build Path: /app/.heroku/python/
+
+OUT_PREFIX=$1
+
+echo "Building SQLite..."
+
+
+SOURCE_TARBALL='https://github.com/dmlc/xgboost/archive/master.zip'
+
+curl $SOURCE_TARBALL -o xgboost.zip
+
+unzip xgboost.zip
+
+# jx
+mv xgboost-master xgboost
+
+cd xgboost
+make
+# make install
+
+# Cleanup
+#cd ..
+# rm -fr sqlite
