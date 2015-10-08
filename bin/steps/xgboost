@@ -19,6 +19,8 @@ cd xgboost
 make
 # make install
 
+mkdir -p .heroku/
+
 # Cleanup
 #cd ..
 # rm -fr sqlite
