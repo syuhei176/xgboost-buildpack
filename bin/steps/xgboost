@@ -7,13 +7,18 @@ echo "Building XGBoost..."
 
 
 SOURCE_TARBALL='https://github.com/dmlc/xgboost/archive/master.zip'
+DMLC_SOURCE_TARBALL='https://github.com/dmlc/dmlc-core/archive/1db0792e1a55355b1f07699bba18c88ded996953.zip'
 
 curl -L $SOURCE_TARBALL -o xgboost.zip
+curl -L $DMLC_SOURCE_TARBALL -o dmlc-core.zip
 
 unzip xgboost.zip
+unzip dmlc-core.zip
 
 # jx
 mv xgboost-master xgboost
+mv dmlc-core-1db0792e1a55355b1f07699bba18c88ded996953 xgboost/dmlc-core
+
 
 cd xgboost
 make
