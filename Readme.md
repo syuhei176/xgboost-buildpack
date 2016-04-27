@@ -1,4 +1,4 @@
-Heroku buildpack: Python, Numpy, and Scipy (Python 2.7 only)
+Heroku buildpack: Python, xgboost (Python 2.7 only)
 ====================================================
 
 This is fork from https://github.com/startupml/xgboost-buildpack
